@@ -1,0 +1,72 @@
+body{
+	text-align: center;
+}
+
+h1{color:;}
+p.dotted {border-style: dotted;}
+#twits{
+	width: 500px;
+	height: 100px;
+	border: 1px solid blue;
+	margin: 50px auto;
+	background-color:gold;
+}
+#content-twitter{
+	width: 200px;
+	height: 50px;
+	border: 1px solid gray;
+	background-color:purple;
+	float: left;
+}
+#pic{
+	width: 200px;
+	height: 100px;
+	border: 1px solid gray;
+	background-color:purple;
+	float: right;
+}
+
+#ig{
+	width: 500px;
+	height: 100px;
+	border: 1px solid blue;
+	margin: 50px auto;
+	background-color:gold;
+}
+#content-ig{
+	width: 200px;
+	height: 50px;
+	border: 1px solid gray;
+	background-color:purple;
+	float: left;
+
+}
+#pic2{
+	width: 200px;
+	height: 100px;
+	border: 1px solid gray;
+	background-color:purple;
+	float: right;
+}
+#snap{
+	width: 500px;
+	height: 100px;
+	border: 1px solid blue;
+	margin: 50px auto;
+	background-color:gold;
+}
+#content-snap{
+	width: 200px;
+	height: 50px;
+	border: 1px solid gray;
+	background-color:purple;
+	float: left;
+
+}
+#pic3{
+	width: 200px;
+	height: 100px;
+	border: 1px solid gray;
+	background-color:purple;
+	float: right;
+}
