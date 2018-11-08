@@ -76,11 +76,50 @@ else{
 }
 if (cursors.up.isDown && player.body.touching.down){
 	player.body.velocity.y = -400;
-	player.animations.play("up");
+
+}
+game.physics.arcade.overlap(player, stars, collectStar);
+game.physics.arcade.overlap(player, boy, deleteLives);
+
+moveEnemy();
+
+if (lives < 0) {
+	endGame();
+}
+
+
+}
+
+function moveEnemy(){
+if(boy.x >759){
+	boy.animations.play('left');
+	boy.body.velocity.x = -150
+}else if (boy.x <405){
+		boy.animations.play('right');
+	boy.body.velocity.x = 150
+}
+}
+function endGame(){
+	player.kill();
+	scorelabel.text = "You such a n00b" + score;
+	scorenumber.visible = false;
+	lifelabel.visible = false;
+	lifenumber.visible = false;
+}
+function collectStar(player,star){
+score = score + 1;
+scorenumber.setText(score);
+star.kill();
+}
+function deleteLives(player, boy){
+	lives = lives - 1;
+	lifenumber.setText(lives);
+	boy.kill();
+	boy.reset(10,20);
 }
 
 
 
 
 
-}
+
