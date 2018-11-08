@@ -23,10 +23,10 @@ ledge.body.immovable = true;
 var ledge2 = platforms.create(300, 400, 'ground')
 ledge2.body.immovable = true;
 var style = {font: "bold 32px Arial", fill:"#fff"};
-scorelabel = game.add.text(690,5, "Score:", style);
+scorelabel = game.add.text(650,5, "Score:", style);
 scorenumber = game.add.text(740,5, score, style);
 lifelabel = game.add.text(10,5, "Lives:", style);
-lifenumber = game.add.text(70,5, lives, style);
+lifenumber = game.add.text(100,5, lives, style);
 player = game.add.sprite(32,400, "player");
 player.animations.add('left', [0,1,2,3],10,true);
 player.animations.add('right', [5,6,7,8],10,true);
