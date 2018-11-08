@@ -18,7 +18,7 @@ platforms.enableBody=true;
 var ground = platforms.create(0,550, 'ground');
 ground.scale.setTo(2,2);
 ground.body.immovable = true
-var ledge = platforms.create(0, 500, 'ground')
+var ledge = platforms.create(0, 100, 'ground')
 ledge.body.immovable = true;
 var ledge2 = platforms.create(300, 400, 'ground')
 ledge2.body.immovable = true;
