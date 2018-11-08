@@ -70,7 +70,7 @@ else if (cursors.right.isDown){
 	player.animations.play("right");
 }
 else{
-	player.animation.stop();
+	player.animations.stop();
 	player.frame = 4;
 
 }
