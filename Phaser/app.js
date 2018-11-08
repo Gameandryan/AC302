@@ -11,7 +11,7 @@ game.load.spritesheet('boy','assets/baddie.png', 32,48);
 }
 
 function create(){
-game.physics.startSystem(Phaser.physics.ARCADE);
+game.physics.startSystem(Phaser.Physics.ARCADE);
 game.add.sprite(0,0,'sky');
 platforms = game.add.physicsGroup();
 platforms.enableBody=true;
@@ -58,8 +58,8 @@ cursors = game.input.keyboard.createCursorKeys();
 
 function update(){
 game.physics.arcade.collide(player, platforms);
-game.physics.arcade.collide(boy, platforms);
 game.physics.arcade.collide(stars, platforms);
+game.physics.arcade.collide(boy, platforms);
 player.body.velocity.x = 0;
 if (cursors.left.isDown){
 	player.body.velocity.x = -100;
