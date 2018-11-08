@@ -6,8 +6,8 @@ function preload (){
 game.load.image('sky', 'assets/sky.png');
 game.load.image('ground', 'assets/platform.png');
 game.load.image('star', 'assets/star.png');
-game.load.spritesheet('player','assests/dude.png', 32,48);
-game.load.spritesheet('boy','assests/baddie.png', 32,48);
+game.load.spritesheet('player','assets/dude.png', 32,48);
+game.load.spritesheet('boy','assets/baddie.png', 32,48);
 }
 
 function create(){
@@ -19,22 +19,22 @@ var ground = platforms.create(0,750, 'ground');
 ground.scale.setTo(2,2);
 ground.body.immovable = true
 var ledge = platforms.create(0, 500, 'ground')
-ground.body.immovable = true;
+ledge.body.immovable = true;
 var ledge2 = platforms.create(300, 400, 'ground')
-ground.body.immovable = true;
+ledge2.body.immovable = true;
 var style = {font: "bold 32px Arial", fill:"#fff"};
 scorelabel = game.add.text(755,5, "Score:", style);
 scorenumber = game.add.text(790,5, score, style);
 lifelabel = game.add.text(10,5, "Lives:", style);
 lifenumber = game.add.text(45,5, "Score:", style);
-player = game.add.sprite(32,400, "dude")
+player = game.add.sprite(32,400, "player")
 player.animations.add('left', [0,1,2,3],10,true);
 player.animations.add('right', [5,6,7,8],10,true);
 game.physics.arcade.enable(player);
 player.body.bounce.y = 0.2;
 player.body.gravity.y = 300;
 player.body.collideWorldBounds = true;
-boy = game.add.sprite(760,20, "baddie")
+boy = game.add.sprite(760,20, "boy")
 boy.animations.add('left', [0,1],10,true);
 boy.animations.add('right', [2,3],10,true);
 game.physics.arcade.enable(boy);
