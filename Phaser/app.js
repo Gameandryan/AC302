@@ -7,7 +7,7 @@ game.load.image('sky', 'assets/sky.png');
 game.load.image('ground', 'assets/platform.png');
 game.load.image('star', 'assets/star.png');
 game.load.spritesheet('player','assests/dude.png', 32,48);
-game.load.spritesheet('bunny','assests/baddie.png', 32,48);
+game.load.spritesheet('boy','assests/baddie.png', 32,48);
 }
 
 function create(){
