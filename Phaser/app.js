@@ -101,9 +101,9 @@ if(boy.x >759){
 }
 function endGame(){
 	player.kill();
-	scorelabel.text = "You such a n00b" + score;
+	lifelabel.text = "You such a n00b" + score;
 	scorenumber.visible = false;
-	lifelabel.visible = false;
+	scorelabel.visible = false;
 	lifenumber.visible = false;
 }
 function collectStar(player,star){
